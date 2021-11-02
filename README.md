@@ -4,11 +4,13 @@ This repository visualizes deep convolutional neural networks (CNNs) in 3D. Take
 
 The repository consists of the client and the server part. The client contains the Unity project to display and to interact with the networks. The server is a Python based implementation, handles the networks and provides the client with data. The server can be run in Docker and an appropriate Dockerfile is included in the repository. 
 
+This software is a part of the [DeepVisionVR](https://github.com/Criscraft/DeepVisionVR) project.
+
 
 ## Requirements
 
 - Unity 2021.1.14f1
-- DeepVisionVR-Server
+Get the [Server](https://github.com/Criscraft/DeepVisionVRServer) to use the visualization software.
 
 
 ## Get started
