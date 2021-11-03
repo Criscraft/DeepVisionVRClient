@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: unity
+  companyName: "Universit\xE4t zu L\xFCbeck, INB"
+  productName: DeepVisionVR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -130,6 +130,7 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
+  - {fileID: 0}
   - {fileID: 1970080295278739146, guid: 7513dda87f3d76846937770bd3f0ab11, type: 2}
   - {fileID: -1546434514597923650, guid: 2a0095762efd5324a866a40316217ccd, type: 2}
   metroInputSource: 0
