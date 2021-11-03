@@ -15,5 +15,7 @@ Get the [Server](https://github.com/Criscraft/DeepVisionVRServer) to use the vis
 
 ## Get started
 
-Download [Unity Hub](https://unity3d.com/get-unity/download) and install Unity 2021.1.14f1  
-If you prefer to use desktop mode, load the scenes BaseScene and SubSceneNonVR. Otherwise load the BaseScene together with SubSceneVR. Start the server separatedly and run the application inside Unity.
+Install the most recent release of the client and run it. There is a version for VR and for desktop mode, respectively. Before running the client, make sure that the server is running.
+
+If you would like to modify the client download [Unity Hub](https://unity3d.com/get-unity/download) and install Unity 2021.1.14f1
+If you prefer to use desktop mode, load the scene SubSceneNonVR. For VR load the scene SubSceneVR.
