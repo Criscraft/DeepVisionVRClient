@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -46,6 +47,7 @@ public class InteractableController : MonoBehaviour
 
     private void Start()
     {
+        // register interactables
         interactables[0] = imageSelector;
         interactables[1] = featureVisualizer;
 
@@ -55,6 +57,11 @@ public class InteractableController : MonoBehaviour
         }
 
         SwitchTool();
+
+        // choose attachoffset depending on device
+        var rightHandedControllers = new List<UnityEngine.XR.InputDevice>();
+        UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.RightHand, rightHandedControllers);
+        Debug.Log(rightHandedControllers);
     }
 
 
