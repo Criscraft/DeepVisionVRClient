@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Generate and overwrite
       objectReference: {fileID: 0}
+    - target: {fileID: 3375819650332962580, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -394,6 +398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+--- !u!224 &7167724073510331428 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+  m_PrefabInstance: {fileID: 128792495470364223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2789768456429416885 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2845905214071895946, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
@@ -405,11 +414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &7167724073510331428 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
-  m_PrefabInstance: {fileID: 128792495470364223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3050271606785876519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -433,6 +437,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Load from Cache
       objectReference: {fileID: 0}
+    - target: {fileID: 3375819650332962580, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -519,6 +527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+--- !u!224 &5252871565112541244 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+  m_PrefabInstance: {fileID: 3050271606785876519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &948590923422455213 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2845905214071895946, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
@@ -530,11 +543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &5252871565112541244 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
-  m_PrefabInstance: {fileID: 3050271606785876519}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3527077208168546561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,6 +689,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "Generate All \n(Takes Time)"
       objectReference: {fileID: 0}
+    - target: {fileID: 3375819650332962580, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7111552174045667867, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -789,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5886249652560883173, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5886249652560883173, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_RootOrder
@@ -813,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5886249652560883173, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5886249652560883173, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_SizeDelta.y
@@ -888,6 +900,10 @@ PrefabInstance:
       value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7914852323879496538, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7914852323879496538, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_fontSizeBase
       value: 64
       objectReference: {fileID: 0}
@@ -925,6 +941,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Delete Cache
       objectReference: {fileID: 0}
+    - target: {fileID: 3375819650332962580, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3375819650332962580, guid: a98f25e0762637b9b8f67d7dfa32078d, type: 3}
       propertyPath: m_fontStyle
       value: 0
