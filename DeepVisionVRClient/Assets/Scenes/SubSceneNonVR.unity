@@ -517,6 +517,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1330267704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330267705}
+  m_Layer: 0
+  m_Name: Static
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1330267705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330267704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2930517, y: 2.3218586, z: -7.240169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1865068804}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1434397675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -700,6 +731,68 @@ RectTransform:
   m_AnchoredPosition: {x: 2.2, y: 1.55}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1865068803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1330267705}
+    m_Modifications:
+    - target: {fileID: 1993513757429829648, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2930517
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3318586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.900169
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+--- !u!4 &1865068804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1993513757429829676, guid: 6fbde97d2a96eb745996942d0e090efe, type: 3}
+  m_PrefabInstance: {fileID: 1865068803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1871702166 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8992139983413666419, guid: f0dae0bddad39954282678a7dec46d41, type: 3}
