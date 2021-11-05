@@ -46,6 +46,8 @@ public class InteractableController : MonoBehaviour
     private Transform interactorTransformOculusTouch;
     [SerializeField]
     private Transform interactorTransformVive;
+    [SerializeField]
+    private bool VRMode = true;
 
 
     private void Awake()
@@ -67,7 +69,7 @@ public class InteractableController : MonoBehaviour
 
         SwitchTool();
 
-        InvokeRepeating("ScanRightHandDevices", 1f, 1f);  //1s delay, repeat every 1s
+        if (VRMode) InvokeRepeating("ScanRightHandDevices", 1f, 1f);  //1s delay, repeat every 1s
     }
 
 
@@ -88,19 +90,28 @@ public class InteractableController : MonoBehaviour
                 interactor.transform.localPosition = Vector3.zero;
                 interactor.transform.localRotation = Quaternion.identity;
             }
-            else if (device.name == "Vive")
+            else if (device.name == "HTC Vive Controller OpenXR")
             {
                 interactor.attachTransform = attachmentPointVive;
                 interactor.transform.SetParent(interactorTransformVive);
                 interactor.transform.localPosition = Vector3.zero;
                 interactor.transform.localRotation = Quaternion.identity;
-            } 
+            }
         }
+
         if (found)
         {
             CancelInvoke("ScanRightHandDevices");
             Debug.Log("Found controller type and adjusted attechment point.");
-        } 
+        }
+        else
+        {
+            Debug.Log("Found the following devices:");
+            foreach (var device in rightHandedControllers)
+            {
+                Debug.Log(device.name);
+            }
+        }
     }
 
     private void SwitchTool()

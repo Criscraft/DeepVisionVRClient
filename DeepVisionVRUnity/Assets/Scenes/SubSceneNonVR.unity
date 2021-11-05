@@ -1011,3 +1011,8 @@ MonoBehaviour:
   xRInteractionManager: {fileID: 1938678141}
   imageSelector: {fileID: 8869358009768108171}
   featureVisualizer: {fileID: 1434397676}
+  attachmentPointOculusTouch: {fileID: 0}
+  attachmentPointVive: {fileID: 0}
+  interactorTransformOculusTouch: {fileID: 0}
+  interactorTransformVive: {fileID: 0}
+  VRMode: 0
