@@ -364,7 +364,7 @@ MonoBehaviour:
   m_ChildAlignment: 6
   m_StartCorner: 2
   m_StartAxis: 0
-  m_CellSize: {x: 400, y: 400}
+  m_CellSize: {x: 300, y: 300}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4329489743577762820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   featureMaps: {fileID: 2859930870369886697}
-  channel2DPrefab: {fileID: 3859813243151223048, guid: 8c1e62942456adc4d8a392e187f59ec5, type: 3}
+  channel2DPrefab: {fileID: 3859813243151223048, guid: 8e33f5ec5bc3dd84383bde57f95acc25, type: 3}
   colormapMaterial: {fileID: 2100000, guid: 83cc1b3d6edb86f4c8c989770fcfcc8a, type: 2}
   rgbMaterial: {fileID: 2100000, guid: b70055543c2f6a04e99f0b6dafe02573, type: 2}
   info: {fileID: 4516175358249454020}
@@ -1243,6 +1243,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 42
       objectReference: {fileID: 0}
+    - target: {fileID: 7914852323879496538, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7914852323879496538, guid: e210f5b3e1d9c53409ffecb674889409, type: 3}
       propertyPath: m_fontSizeBase
       value: 42

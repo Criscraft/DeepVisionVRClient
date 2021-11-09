@@ -118,6 +118,7 @@ public class DLNetwork : MonoBehaviour
     public IEnumerator AcceptNetworkArchitecture(JObject jObject)
     {
         architecture = (JArray)jObject["architecture"];
+        classNames = (JArray)jObject["class_names"];
 
         // find grid size
         int posX = 0;
@@ -283,7 +284,7 @@ public class DLNetwork : MonoBehaviour
         children.ForEach(child => Destroy(child));
 
         // fill the foreign result canvas
-        JArray classNames = (JArray) jObject["class_names"];
+        classNames = (JArray) jObject["class_names"];
         JArray confidenceValues = (JArray) jObject["confidence_values"];
         for (int i = 0; i < classNames.Count; i++)
         {
@@ -354,6 +355,7 @@ public class DLNetwork : MonoBehaviour
                 newLayerInstance.transform.localRotation = transform.localRotation;
                 newLayerInstance.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f);
                 newLayerInstance.name = "2D_feature_map_layer " + string.Format("{0}", gridPos[0]) + "," + string.Format("{0}", gridPos[1]);
+                Debug.Log((string)jObject["layer_name"]);
                 newLayerInstance.GetComponent<Layer2D>().Prepare(size, this, networkID, layerID);
             }
             else if (datatype == "1D_vector")
@@ -365,7 +367,13 @@ public class DLNetwork : MonoBehaviour
                 newLayerInstance.transform.localRotation = transform.localRotation;
                 newLayerInstance.transform.localScale = new Vector3(0.0005f, 0.0005f, 0.0005f);
                 newLayerInstance.name = "1D_vector_layer " + string.Format("{0}", gridPos[0]) + "," + string.Format("{0}", gridPos[1]);
-                newLayerInstance.GetComponent<Layer2D>().Prepare(size, this, networkID, layerID);
+                
+                Debug.Log((string)jObject["layer_name"]);
+                if (((string)jObject["layer_name"]).Contains("(display_classnames)"))
+                {
+                    newLayerInstance.GetComponent<Layer2D>().Prepare(size, this, networkID, layerID, classNames);
+                }
+                else newLayerInstance.GetComponent<Layer2D>().Prepare(size, this, networkID, layerID);
             }
             else if (datatype == "None") // could change to "InfoScreen"
             {

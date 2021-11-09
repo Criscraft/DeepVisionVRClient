@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using Newtonsoft.Json.Linq;
 
 
 public class Layer2D : NetLayer
@@ -41,7 +42,7 @@ public class Layer2D : NetLayer
     private bool rgb = false;
 
 
-    public void Prepare(Vector3Int size, DLNetwork _dlNetwork,  int _networkID, int _layerID)
+    public void Prepare(Vector3Int size, DLNetwork _dlNetwork,  int _networkID, int _layerID, JArray _channelLabels=null)
     {
         dlNetwork = _dlNetwork;
         networkID = _networkID;
@@ -51,7 +52,7 @@ public class Layer2D : NetLayer
 
         transform.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
-        GenerateFeatureMaps(size);
+        GenerateFeatureMaps(size, _channelLabels);
 
         // generate plots and disable them for later use
         GenerateWeightHistogram();
@@ -68,7 +69,7 @@ public class Layer2D : NetLayer
     }
 
 
-    private void GenerateFeatureMaps(Vector3Int size)
+    private void GenerateFeatureMaps(Vector3Int size, JArray _channelLabels=null)
     {
         Material material = Instantiate(colormapMaterial);
         for (int i = 0; i < size[0]; i++)
@@ -81,6 +82,8 @@ public class Layer2D : NetLayer
             newChannel2DInstance.localScale = Vector3.one;
             ImageGetterButton imageGetterButton = newChannel2DInstance.GetComponent<ImageGetterButton>();
             imageGetterButton.MaterialUsed = material;
+            if (_channelLabels != null) imageGetterButton.SetText((string)_channelLabels[i]);
+            else imageGetterButton.SetTextActive(false);
             //FeatureVisualizationButton featureVisualizationButton = newChannel2DInstance.GetComponent<FeatureVisualizationButton>();
             //featureVisualizationButton.Prepare(dlNetwork);
             items.Add(newChannel2DInstance.gameObject);

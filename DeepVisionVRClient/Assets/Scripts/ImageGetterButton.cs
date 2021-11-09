@@ -33,7 +33,7 @@ public class ImageGetterButton : MonoBehaviour
 		set
 		{
 			this.activationImageUsed = value;
-				if (textMeshPro != null) textMeshPro.text = value.className;
+				if (textMeshPro != null & value.mode == ActivationImage.Mode.DatasetImage) textMeshPro.text = value.className;
 				image.texture = (Texture2D)value.tex;
 				Vector2 wh = Helpers.SizeToMatchAspectRatioInSquare(value.tex);
 				image.rectTransform.localScale = new Vector3(wh.x, wh.y, 1f);
@@ -81,4 +81,17 @@ public class ImageGetterButton : MonoBehaviour
 			}
 		}
 	}
+
+
+	public void SetTextActive(bool active)
+	{
+		if (textMeshPro != null) textMeshPro.gameObject.SetActive(active);
+	}
+
+
+	public void SetText(string label)
+	{
+		if (textMeshPro != null) textMeshPro.text = label;
+	}
+
 }
