@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -758,6 +758,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1342307297}
+--- !u!114 &1376804826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8400045415939765348, guid: af948fec54b463048bcb0bddebce1792, type: 3}
+  m_PrefabInstance: {fileID: 598211630408557753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1376804828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2072636361961424498, guid: af948fec54b463048bcb0bddebce1792, type: 3}
+  m_PrefabInstance: {fileID: 598211630408557753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1496667365
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,28 +823,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1733931798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-  m_PrefabInstance: {fileID: 598211630408557753}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1733931799 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-  m_PrefabInstance: {fileID: 598211630408557753}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1843635526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -967,174 +967,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1496667366}
-    - target: {fileID: 598211628619991891, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_PlayHapticsOnHoverEntered
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211628619991891, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_PlayHapticsOnSelectEntered
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_LineType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Velocity
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_UseForceGrab
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1496667366}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_RaycastMask.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_EnableUIInteraction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_SelectActionTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_PlayHapticsOnHoverEntered
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_PlayHapticsOnSelectEntered
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869184, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InteractionLayerMask.m_Bits
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.atime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.ctime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.8392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.7921569
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.67058825
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.8392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0.7921569
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.67058825
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869185, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Parameters.colorGradient.m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869187, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_SelectAction.m_Reference
-      value: 
-      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    - target: {fileID: 598211630242869187, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_SelectAction.m_UseReference
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_Reticle
-      value: 
-      objectReference: {fileID: 2057148916809465507}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_SmoothMovement
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.atime1
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.ctime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key0.b
-      value: 0.8392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key0.g
-      value: 0.7921569
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key0.r
-      value: 0.67058825
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key1.b
-      value: 0.8392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key1.g
-      value: 0.7921569
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.key1.r
-      value: 0.67058825
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_ValidColorGradient.m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InvalidColorGradient.atime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InvalidColorGradient.ctime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InvalidColorGradient.key0.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InvalidColorGradient.key1.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_InvalidColorGradient.m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 598211630242869198, guid: af948fec54b463048bcb0bddebce1792, type: 3}
-      propertyPath: m_OverrideInteractorLineLength
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 598211630340472964, guid: af948fec54b463048bcb0bddebce1792, type: 3}
       propertyPath: m_Name
       value: PlayerVR
@@ -1195,6 +1027,10 @@ PrefabInstance:
       propertyPath: xRInteractionManager
       value: 
       objectReference: {fileID: 1496667366}
+    - target: {fileID: 8400045415939765348, guid: af948fec54b463048bcb0bddebce1792, type: 3}
+      propertyPath: m_Reticle
+      value: 
+      objectReference: {fileID: 2057148916809465507}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af948fec54b463048bcb0bddebce1792, type: 3}
 --- !u!1001 &1993513757533325519
@@ -1436,7 +1272,7 @@ PrefabInstance:
     - target: {fileID: 2778921784355114738, guid: b596ab294dd7f694ca8fe680732ed7e8, type: 3}
       propertyPath: interactor
       value: 
-      objectReference: {fileID: 1733931798}
+      objectReference: {fileID: 1376804828}
     - target: {fileID: 2778921784355114738, guid: b596ab294dd7f694ca8fe680732ed7e8, type: 3}
       propertyPath: recticleTransform
       value: 
@@ -1452,7 +1288,7 @@ PrefabInstance:
     - target: {fileID: 2778921784355114738, guid: b596ab294dd7f694ca8fe680732ed7e8, type: 3}
       propertyPath: teleportationVisualLine
       value: 
-      objectReference: {fileID: 1733931799}
+      objectReference: {fileID: 1376804826}
     - target: {fileID: 6062477398246430778, guid: b596ab294dd7f694ca8fe680732ed7e8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

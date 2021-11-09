@@ -818,12 +818,15 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
     m_Reference: {fileID: 5042064956508068318, guid: 059e892bdc44e864ebb1745e7875303b, type: 3}
-  interactor: {fileID: 8992139983840131257}
+  leftInteractor: {fileID: 0}
+  rightInteractor: {fileID: 0}
   xRInteractionManager: {fileID: 0}
   imageSelector: {fileID: 0}
   featureVisualizer: {fileID: 0}
   attachmentPointOculusTouch: {fileID: 0}
   attachmentPointVive: {fileID: 0}
-  interactorTransformOculusTouch: {fileID: 0}
-  interactorTransformVive: {fileID: 0}
+  rightInteractorTransformOculusTouch: {fileID: 0}
+  rightInteractorTransformVive: {fileID: 0}
+  leftInteractorTransformOculusTouch: {fileID: 0}
+  leftInteractorTransformVive: {fileID: 0}
   VRMode: 0

@@ -17,7 +17,7 @@ public class FeatureVisualizationButton : MonoBehaviour
 
 	public void TaskOnClick()
 	{
-		XRBaseInteractable selectTarget = InteractableController.instance.Interactor.selectTarget;
+		XRBaseInteractable selectTarget = InteractableController.instance.RightInteractor.selectTarget;
 		if (selectTarget != null) TaskOnClickWithInteractor(selectTarget);
 	}
 

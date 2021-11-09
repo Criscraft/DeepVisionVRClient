@@ -23,10 +23,12 @@ public class InteractableController : MonoBehaviour
     [SerializeField]
     private InputActionProperty switchToolAction;
     [SerializeField]
-    private XRBaseInteractor interactor;
-    public XRBaseInteractor Interactor
+    private XRBaseInteractor leftInteractor;
+    [SerializeField]
+    private XRBaseInteractor rightInteractor;
+    public XRBaseInteractor RightInteractor
     {
-        get => interactor;
+        get => rightInteractor;
     }
     [SerializeField]
     private XRInteractionManager xRInteractionManager;
@@ -43,9 +45,14 @@ public class InteractableController : MonoBehaviour
     private Transform attachmentPointVive;
 
     [SerializeField]
-    private Transform interactorTransformOculusTouch;
+    private Transform rightInteractorTransformOculusTouch;
     [SerializeField]
-    private Transform interactorTransformVive;
+    private Transform rightInteractorTransformVive;
+
+    [SerializeField]
+    private Transform leftInteractorTransformOculusTouch;
+    [SerializeField]
+    private Transform leftInteractorTransformVive;
     [SerializeField]
     private bool VRMode = true;
 
@@ -85,18 +92,24 @@ public class InteractableController : MonoBehaviour
         {
             if (device.name == "Oculus Touch Controller OpenXR")
             {
-                interactor.attachTransform = attachmentPointOculusTouch;
-                interactor.transform.SetParent(interactorTransformOculusTouch);
-                interactor.transform.localPosition = Vector3.zero;
-                interactor.transform.localRotation = Quaternion.identity;
+                rightInteractor.attachTransform = attachmentPointOculusTouch;
+                rightInteractor.transform.SetParent(rightInteractorTransformOculusTouch);
+                rightInteractor.transform.localPosition = Vector3.zero;
+                rightInteractor.transform.localRotation = Quaternion.identity;
+                leftInteractor.transform.SetParent(leftInteractorTransformOculusTouch);
+                leftInteractor.transform.localPosition = Vector3.zero;
+                leftInteractor.transform.localRotation = Quaternion.identity;
                 found = true;
             }
             else if (device.name == "HTC Vive Controller OpenXR")
             {
-                interactor.attachTransform = attachmentPointVive;
-                interactor.transform.SetParent(interactorTransformVive);
-                interactor.transform.localPosition = Vector3.zero;
-                interactor.transform.localRotation = Quaternion.identity;
+                rightInteractor.attachTransform = attachmentPointVive;
+                rightInteractor.transform.SetParent(rightInteractorTransformVive);
+                rightInteractor.transform.localPosition = Vector3.zero;
+                rightInteractor.transform.localRotation = Quaternion.identity;
+                leftInteractor.transform.SetParent(leftInteractorTransformVive);
+                leftInteractor.transform.localPosition = Vector3.zero;
+                leftInteractor.transform.localRotation = Quaternion.identity;
                 found = true;
             }
         }
@@ -129,7 +142,7 @@ public class InteractableController : MonoBehaviour
     {
         oldInteractableTransform.gameObject.SetActive(false);
         interactableTransform.gameObject.SetActive(true);
-        xRInteractionManager.ForceSelect(interactor, interactableTransform.GetComponent<XRBaseInteractable>());
+        xRInteractionManager.ForceSelect(rightInteractor, interactableTransform.GetComponent<XRBaseInteractable>());
 
         if (InputManagerFPSInteraction.instance != null)
         {
