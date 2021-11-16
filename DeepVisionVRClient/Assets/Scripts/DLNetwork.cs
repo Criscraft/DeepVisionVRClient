@@ -71,6 +71,9 @@ public class DLNetwork : MonoBehaviour
     private float minimalZOffset = 0.75f;
     [SerializeField]
     private float maximalZOffset = 10f;
+    [SerializeField]
+    private float zOffsetFactor = 1f;
+    
 
     // spiral layout
     [SerializeField]
@@ -412,6 +415,7 @@ public class DLNetwork : MonoBehaviour
             layoutParams.xStrictGridPlacement = xStrictGridPlacement;
             layoutParams.minimalZOffset = minimalZOffset;
             layoutParams.maximalZOffset = maximalZOffset;
+            layoutParams.zOffsetFactor = zOffsetFactor;
         }
         else if (layoutMode == LayoutParams.LayoutMode.spiralLayout)
         {

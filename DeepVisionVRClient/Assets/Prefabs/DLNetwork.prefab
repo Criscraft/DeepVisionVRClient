@@ -96,8 +96,9 @@ MonoBehaviour:
   minimalInfoScreenSize: 0.75
   xCentering: 0
   xStrictGridPlacement: 0
-  minimalZOffset: 0.5
-  maximalZOffset: 10
+  minimalZOffset: 1
+  maximalZOffset: 20
+  zOffsetFactor: 1.2
   _spiralLayout_theta_0: 450
   _spiralLayout_b: 0.7
   nPointsInBezier: 20

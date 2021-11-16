@@ -18,14 +18,18 @@ public struct LayoutParams
     public bool xStrictGridPlacement;
     public float minimalZOffset;
     public float maximalZOffset;
+    public float zOffsetFactor;
 
     // spiral layout
     public float theta_0;
     public float b;
 
     // edges
+    [SerializeField]
     public int nPointsInBezier;
+    [SerializeField]
     public float edgeTextPosition;
+    [SerializeField]
     public float maxEdgeLabelSize;
 }
 
@@ -196,7 +200,7 @@ public class NetworkLayouts
         float zOffset = 0f;
         for (int posZ = 1; posZ < gridSize[0]; posZ++)
         {
-            zOffsetStep = 0.75f * Mathf.Max(maxWidthOfStage[posZ], maxWidthOfStage[posZ - 1]);
+            zOffsetStep = layoutParams.zOffsetFactor * Mathf.Max(maxWidthOfStage[posZ], maxWidthOfStage[posZ - 1]);
             if (zOffsetStep < layoutParams.minimalZOffset) zOffsetStep = layoutParams.minimalZOffset;
             if (zOffsetStep > layoutParams.maximalZOffset) zOffsetStep = layoutParams.maximalZOffset;
 
