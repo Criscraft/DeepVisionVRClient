@@ -1,21 +1,16 @@
 # A Walk in the Black-Box: Deep Convolutional Neural Network Visualization in Virtual Reality - Client
 
-This repository visualizes deep convolutional neural networks (CNNs) in 3D. Take a walk in your CNN and interact with it to get a more intuitive understanding of Deep Learning or to analyze your models. The software provides visualization algorithms like feature visualization to reveal what visual concepts the models have learned. Virtual Reality and desktop mode are available. Currently, CNNs for image classification and segmentation are supported. 
+The [DeepVisionVR](https://github.com/Criscraft/DeepVisionVR) project visualizes deep convolutional neural networks (CNNs) in 3D. Take a walk in your CNN and interact with it to get a more intuitive understanding of Deep Learning or to analyze your models.
 
-The repository consists of the client and the server part. The client contains the Unity project to display and to interact with the networks. The server is a Python based implementation, handles the networks and provides the client with data. The server can be run in Docker and an appropriate Dockerfile is included in the repository. 
-
-This software is a part of the [DeepVisionVR](https://github.com/Criscraft/DeepVisionVR) project.
-
+This repository contains the *client* part of the project, which contains the Unity project to display and interact with artificial neural networks. Virtual Reality and desktop modes are available. The software uses the OpenXR framework. The Server can be found [HERE](https://github.com/Criscraft/DeepVisionVRServer).
 
 ## Requirements
 
-- Unity 2021.1.14f1
-Get the [Server](https://github.com/Criscraft/DeepVisionVRServer) to use the visualization software.
+Please install the most recent release of the client (see releases). There is a version for VR and for desktop mode, respectively.
 
+For development:
+Please install Unity 2021.1.14f1 using [Unity Hub](https://unity3d.com/get-unity/download). By default, the Unity project will start in non-VR mode. If you want to develop with VR enabled, please unload the scene SubSceneNonVR and load SubSceneVR. Then, go to Project Settings -> XR Plug-in Management and enable 'Initialize XR on Startup'.
 
 ## Get started
 
-Install the most recent release of the client and run it. There is a version for VR and for desktop mode, respectively. Before running the client, make sure that the server is running.
-
-If you would like to modify the client download [Unity Hub](https://unity3d.com/get-unity/download) and install Unity 2021.1.14f1
-If you prefer to use desktop mode, load the scene SubSceneNonVR. For VR load the scene SubSceneVR.
+Simply run the client (either the VR-release or the desktop release). Before running the client, make sure that the server is set-up and running.

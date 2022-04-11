@@ -75,10 +75,10 @@ Shader "Unlit/UnlitTwoSidedColormap"
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i); // Single Pass Instanced rendering
                 //fixed4 col = tex2D(_MainTex, i.uv);
                 fixed4 col = tex2D(_MainTex, UnityStereoScreenSpaceUVAdjust(i.uv, _MainTex_ST)); // Single Pass Instanced rendering
-                float3 colRGB = { col.r, col.g, col.b };
-                float mag = length(colRGB);
-                float factorColor1 = clamp((_TransitionValue - mag) / (_TransitionValue + 1e-6), 0, 1);
-                float factorColor2 = clamp((mag - _TransitionValue) / (1 - _TransitionValue + 1e-6), 0, 1);
+                float mag = (col.r + col.g + col.b) / 3;
+                float scale = max(_TransitionValue, 1 - _TransitionValue);
+                float factorColor1 = clamp((_TransitionValue - mag) / scale, 0, 1);
+                float factorColor2 = clamp((mag - _TransitionValue) / scale, 0, 1);
                 float factorTransitionColor = clamp(1 - factorColor1 - factorColor2, 0, 1);
                 col = factorColor1 * _Color1 + factorColor2 * _Color2 + factorTransitionColor * _TransitionColor;
 

@@ -33,6 +33,7 @@ public class Layer2D : NetLayer
     private DLNetwork dlNetwork;
     private int networkID;
     private int layerID;
+    private JArray channelLabels;
 
 
     private LinePlotter weightHistogram;
@@ -47,6 +48,7 @@ public class Layer2D : NetLayer
         dlNetwork = _dlNetwork;
         networkID = _networkID;
         layerID = _layerID;
+        channelLabels = _channelLabels;
 
         layerSettingsButtons.Prepare(dlNetwork, layerID);
 
@@ -247,7 +249,7 @@ public class Layer2D : NetLayer
         imageGetterButton = items[0].GetComponent<ImageGetterButton>();
         activationImage = imageGetterButton.ActivationImageUsed;
         mode = activationImage.mode;
-        exportPathFinal = Path.Combine(new string[] {exportPath, string.Format("network{0}", networkID), mode.ToString(), string.Format("layer{0}", layerID)});
+            exportPathFinal = Path.Combine(new string[] {exportPath, string.Format("network{0}", networkID), mode.ToString(), string.Format("layer{0}", layerID) });
         if (!Directory.Exists(exportPathFinal))
         {
             Directory.CreateDirectory(exportPathFinal);
@@ -260,7 +262,9 @@ public class Layer2D : NetLayer
             texture = activationImage.tex as Texture2D;
             // Encode texture into PNG
             bytes = texture.EncodeToPNG();
-            File.WriteAllBytes(Path.Combine(new string[] {exportPathFinal, string.Format("{0}.png", i) }), bytes);
+            string imageName = string.Format("{0}.png", i);
+            if (channelLabels != null) imageName = (string)channelLabels[i] + ".png";
+            File.WriteAllBytes(Path.Combine(new string[] {exportPathFinal, imageName}), bytes);
         }
     }
 
