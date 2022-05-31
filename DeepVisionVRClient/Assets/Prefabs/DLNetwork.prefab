@@ -203,6 +203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResultCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3733071972883595572, guid: 3b5dc09b1cc29684f91c31b4c9fda83a, type: 3}
+      propertyPath: m_TagString
+      value: ToggableNetworkUI
+      objectReference: {fileID: 0}
     - target: {fileID: 3733071972904644636, guid: 3b5dc09b1cc29684f91c31b4c9fda83a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -468,6 +472,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6865548097309466652, guid: f7aaf46728d93ba3881c1c1c8c212ed4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033745338922623620, guid: f7aaf46728d93ba3881c1c1c8c212ed4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033745338922623620, guid: f7aaf46728d93ba3881c1c1c8c212ed4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033745338922623620, guid: f7aaf46728d93ba3881c1c1c8c212ed4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033745338922623620, guid: f7aaf46728d93ba3881c1c1c8c212ed4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

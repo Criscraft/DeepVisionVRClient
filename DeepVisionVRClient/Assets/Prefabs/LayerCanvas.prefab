@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 6656798641878756708}
   m_Layer: 5
   m_Name: OuterInfo
-  m_TagString: Untagged
+  m_TagString: ToggableNetworkUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
