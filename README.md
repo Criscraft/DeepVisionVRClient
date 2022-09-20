@@ -1,4 +1,4 @@
-# A Walk in the Black-Box: Deep Convolutional Neural Network Visualization in Virtual Reality - Client
+# DeepVisionVR - Client
 
 The [DeepVisionVR](https://github.com/Criscraft/DeepVisionVR) project visualizes deep convolutional neural networks (CNNs) in 3D. Take a walk in your CNN and interact with it to get a more intuitive understanding of Deep Learning or to analyze your models.
 
@@ -9,8 +9,8 @@ This repository contains the *client* part of the project, which contains the Un
 Please install the most recent release of the client (see releases). There is a version for VR and for desktop mode, respectively.
 
 For development:
-Please install Unity 2021.1.14f1 using [Unity Hub](https://unity3d.com/get-unity/download). By default, the Unity project will start in non-VR mode. If you want to develop with VR enabled, please unload the scene SubSceneNonVR and load SubSceneVR. Then, go to Project Settings -> XR Plug-in Management and enable 'Initialize XR on Startup'.
+Please install Unity 2021.3.9f1 via [Unity Hub](https://unity3d.com/get-unity/download).
 
 ## Get started
 
-Simply run the client (either the VR-release or the desktop release). Before running the client, make sure that the server is set-up and running.
+Simply run the client. If you have no VR Headset connected, the application will start desktop mode. Before running the client, make sure that the server is set-up and running.
