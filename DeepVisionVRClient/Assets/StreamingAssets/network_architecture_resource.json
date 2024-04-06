@@ -1,0 +1,767 @@
+{
+    "architecture": [
+        {
+            "pos": [
+                0,
+                0
+            ],
+            "layer_name": "Input",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                3,
+                150,
+                175
+            ],
+            "precursors": []
+        },
+        {
+            "pos": [
+                1,
+                0
+            ],
+            "layer_name": "Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                75,
+                88
+            ],
+            "precursors": [
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                2,
+                0
+            ],
+            "layer_name": "Maxpool",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    1,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                3,
+                0
+            ],
+            "layer_name": "BasicBlock",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    2,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                4,
+                0
+            ],
+            "layer_name": "BasicBlock Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    3,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                5,
+                0
+            ],
+            "layer_name": "BasicBlock Conv2",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    4,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                5,
+                1
+            ],
+            "layer_name": "Skip",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    3,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                6,
+                0
+            ],
+            "layer_name": "Sum",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    5,
+                    0
+                ],
+                [
+                    5,
+                    1
+                ]
+            ]
+        },
+        {
+            "pos": [
+                7,
+                0
+            ],
+            "layer_name": "BasicBlock",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    6,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                8,
+                0
+            ],
+            "layer_name": "BasicBlock Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    7,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                9,
+                0
+            ],
+            "layer_name": "BasicBlock Conv2",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    8,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                9,
+                1
+            ],
+            "layer_name": "Skip",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    7,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                10,
+                0
+            ],
+            "layer_name": "Sum",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                64,
+                38,
+                44
+            ],
+            "precursors": [
+                [
+                    9,
+                    0
+                ],
+                [
+                    9,
+                    1
+                ]
+            ]
+        },
+        {
+            "pos": [
+                11,
+                0
+            ],
+            "layer_name": "BasicBlock",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    10,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                12,
+                0
+            ],
+            "layer_name": "BasicBlock Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                128,
+                19,
+                22
+            ],
+            "precursors": [
+                [
+                    11,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                13,
+                0
+            ],
+            "layer_name": "BasicBlock Conv2",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                128,
+                19,
+                22
+            ],
+            "precursors": [
+                [
+                    12,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                13,
+                1
+            ],
+            "layer_name": "Skip",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                128,
+                19,
+                22
+            ],
+            "precursors": [
+                [
+                    11,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                14,
+                0
+            ],
+            "layer_name": "Sum",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                128,
+                19,
+                22
+            ],
+            "precursors": [
+                [
+                    13,
+                    0
+                ],
+                [
+                    13,
+                    1
+                ]
+            ]
+        },
+        {
+            "pos": [
+                15,
+                0
+            ],
+            "layer_name": "BasicBlock",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    14,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                16,
+                0
+            ],
+            "layer_name": "BasicBlock Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                256,
+                10,
+                11
+            ],
+            "precursors": [
+                [
+                    15,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                17,
+                0
+            ],
+            "layer_name": "BasicBlock Conv2",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                256,
+                10,
+                11
+            ],
+            "precursors": [
+                [
+                    16,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                17,
+                1
+            ],
+            "layer_name": "Skip",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                256,
+                10,
+                11
+            ],
+            "precursors": [
+                [
+                    15,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                18,
+                0
+            ],
+            "layer_name": "Sum",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                256,
+                10,
+                11
+            ],
+            "precursors": [
+                [
+                    17,
+                    0
+                ],
+                [
+                    17,
+                    1
+                ]
+            ]
+        },
+        {
+            "pos": [
+                19,
+                0
+            ],
+            "layer_name": "BasicBlock",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    18,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                20,
+                0
+            ],
+            "layer_name": "BasicBlock Conv1",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                512,
+                5,
+                6
+            ],
+            "precursors": [
+                [
+                    19,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                21,
+                0
+            ],
+            "layer_name": "BasicBlock Conv2",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                512,
+                5,
+                6
+            ],
+            "precursors": [
+                [
+                    20,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                21,
+                1
+            ],
+            "layer_name": "Skip",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                512,
+                5,
+                6
+            ],
+            "precursors": [
+                [
+                    19,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                22,
+                0
+            ],
+            "layer_name": "Sum",
+            "data_type": "2D_feature_map",
+            "size": [
+                1,
+                512,
+                5,
+                6
+            ],
+            "precursors": [
+                [
+                    21,
+                    0
+                ],
+                [
+                    21,
+                    1
+                ]
+            ]
+        },
+        {
+            "pos": [
+                23,
+                0
+            ],
+            "layer_name": "Avgpool",
+            "data_type": "1D_vector",
+            "size": [
+                1,
+                512
+            ],
+            "precursors": [
+                [
+                    22,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                24,
+                0
+            ],
+            "layer_name": "Flatten to 1D vector",
+            "data_type": "None",
+            "size": [
+                0
+            ],
+            "precursors": [
+                [
+                    23,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                25,
+                0
+            ],
+            "layer_name": "Class Scores (display_classnames)",
+            "data_type": "1D_vector",
+            "size": [
+                1,
+                101
+            ],
+            "precursors": [
+                [
+                    24,
+                    0
+                ]
+            ]
+        },
+        {
+            "pos": [
+                26,
+                0
+            ],
+            "layer_name": "Posterior Probabilities (display_classnames)",
+            "data_type": "1D_vector",
+            "size": [
+                1,
+                101
+            ],
+            "precursors": [
+                [
+                    25,
+                    0
+                ]
+            ]
+        }
+    ],
+    "class_names": [
+        "Faces",
+        "Faces_easy",
+        "Leopards",
+        "Motorbikes",
+        "accordion",
+        "airplanes",
+        "anchor",
+        "ant",
+        "barrel",
+        "bass",
+        "beaver",
+        "binocular",
+        "bonsai",
+        "brain",
+        "brontosaurus",
+        "buddha",
+        "butterfly",
+        "camera",
+        "cannon",
+        "car_side",
+        "ceiling_fan",
+        "cellphone",
+        "chair",
+        "chandelier",
+        "cougar_body",
+        "cougar_face",
+        "crab",
+        "crayfish",
+        "crocodile",
+        "crocodile_head",
+        "cup",
+        "dalmatian",
+        "dollar_bill",
+        "dolphin",
+        "dragonfly",
+        "electric_guitar",
+        "elephant",
+        "emu",
+        "euphonium",
+        "ewer",
+        "ferry",
+        "flamingo",
+        "flamingo_head",
+        "garfield",
+        "gerenuk",
+        "gramophone",
+        "grand_piano",
+        "hawksbill",
+        "headphone",
+        "hedgehog",
+        "helicopter",
+        "ibis",
+        "inline_skate",
+        "joshua_tree",
+        "kangaroo",
+        "ketch",
+        "lamp",
+        "laptop",
+        "llama",
+        "lobster",
+        "lotus",
+        "mandolin",
+        "mayfly",
+        "menorah",
+        "metronome",
+        "minaret",
+        "nautilus",
+        "octopus",
+        "okapi",
+        "pagoda",
+        "panda",
+        "pigeon",
+        "pizza",
+        "platypus",
+        "pyramid",
+        "revolver",
+        "rhino",
+        "rooster",
+        "saxophone",
+        "schooner",
+        "scissors",
+        "scorpion",
+        "sea_horse",
+        "snoopy",
+        "soccer_ball",
+        "stapler",
+        "starfish",
+        "stegosaurus",
+        "stop_sign",
+        "strawberry",
+        "sunflower",
+        "tick",
+        "trilobite",
+        "umbrella",
+        "watch",
+        "water_lilly",
+        "wheelchair",
+        "wild_cat",
+        "windsor_chair",
+        "wrench",
+        "yin_yang"
+    ],
+    "networkid": 0,
+    "layer_id_to_output_index": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "9": 7,
+        "10": 8,
+        "11": 9,
+        "12": 10,
+        "14": 11,
+        "15": 12,
+        "16": 13,
+        "17": 14,
+        "19": 15,
+        "20": 16,
+        "21": 17,
+        "22": 18,
+        "24": 19,
+        "25": 20,
+        "26": 21,
+        "27": 22,
+        "28": 23,
+        "30": 24,
+        "31": 25
+    }
+}

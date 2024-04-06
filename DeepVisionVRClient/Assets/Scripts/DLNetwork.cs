@@ -111,6 +111,8 @@ public class DLNetwork : MonoBehaviour
     private List<Transform> edges = new List<Transform>();
     private List<Transform> edgeLabels = new List<Transform>();
 
+    private bool is_requesting_for_input = false;
+
 
     public void RequestNetworkArchitecture()
     {
@@ -165,8 +167,8 @@ public class DLNetwork : MonoBehaviour
         string datatype = (string)architecture[layerID]["data_type"];
         if (datatype == "2D_feature_map" || datatype == "1D_vector")
         {
-            dlClient.RequestLayerFeatureVisualization(AcceptLayerActivation, networkID, layerID);
             SetLoading(layerID);
+            dlClient.RequestLayerFeatureVisualization(AcceptLayerActivation, networkID, layerID);
         }
     }
 
@@ -263,11 +265,14 @@ public class DLNetwork : MonoBehaviour
 
     public void RequestPrepareForInput(ActivationImage activationImage)
     {
+        if (is_requesting_for_input) return;
         dlClient.RequestPrepareForInput(AcceptPrepareForInput, networkID, activationImage);
+        is_requesting_for_input = true;
     }
 
     public IEnumerator AcceptPrepareForInput()
     {
+        is_requesting_for_input = false;
         UpdateAllLayers();
         yield return null;
     }

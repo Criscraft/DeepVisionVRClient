@@ -8,6 +8,8 @@ public class NoiseGenerateButton : MonoBehaviour
     private ImageGetterButton imageGetterButton;
     private DLWebClient dlClient;
     private int noiseGeneratorID = -1;
+    [SerializeField]
+    public bool clickOnStart = true;
 
 
     public void Prepare(DLWebClient _dlClient, int _noiseGeneratorID)
@@ -37,4 +39,10 @@ public class NoiseGenerateButton : MonoBehaviour
         imageGetterButton.ActivationImageUsed = activationImage;
         yield return null;
     }
+
+
+	public void Start()
+	{
+		if (clickOnStart) RequestNoiseImage();
+	}
 }

@@ -88,7 +88,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6752618089803179941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +334,22 @@ PrefabInstance:
     - target: {fileID: 6909821043063905246, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
       propertyPath: m_Name
       value: NetworkSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470118032393358401, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470118032393358401, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470118032393358401, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470118032393358401, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8951763678467913697, guid: cbe501a4909e39e4cb5856383adb2344, type: 3}
       propertyPath: m_AnchorMax.y

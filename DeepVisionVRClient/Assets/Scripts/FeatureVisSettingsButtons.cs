@@ -59,4 +59,15 @@ public class FeatureVisSettingsButtons : MonoBehaviour
         dlClient.RequestAllFeatureVisualizations(networkID);
     }
 
+
+    private void Start()
+    {
+        if (GlobalSettings.Instance.using_demo_network)
+        {
+            // Hide the network settings buttons
+            gameObject.SetActive(false);
+
+        }
+    }
+
 }
