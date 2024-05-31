@@ -291,12 +291,12 @@ public class StandaloneNetwork : MonoBehaviour
     public static JObject ReadDataFromJson(String jsonFileName) {
         var jsonFilePath = Path.Combine(Application.streamingAssetsPath, jsonFileName);
         string dataString;
-        #if UNITY_EDITOR
-            dataString = File.ReadAllText(jsonFilePath);
-        #elif UNITY_ANDROID
+        #if UNITY_ANDROID
             WWW reader = new WWW(jsonFilePath);
             while (!reader.isDone) { } // Do nothing
             dataString = reader.text;
+        #else
+            dataString = File.ReadAllText(jsonFilePath);
         #endif
         return JObject.Parse(dataString);
     }
